@@ -1,0 +1,322 @@
+[
+    {
+        "english": "trifling (adj)",
+        "turkish": "önemsiz",
+        "example": "it was such a trifling sum of money to argue about",
+        "exampleTr": "tartışılacak kadar önemsiz bir para miktarıydı",
+        "synonyms": "trivial, unimportant, insignificant",
+        "antonyms": "important, significant"
+    },
+    {
+        "english": "abundant (adj)",
+        "turkish": "bol, bereketli",
+        "example": "cheap consumer goods are abundant in this region",
+        "exampleTr": "bu bölgede ucuz tüketim malları bol miktarda bulunuyor",
+        "synonyms": "plentiful, copious, ample, profuse",
+        "antonyms": "scarce, rare, sparse, insufficient"
+    },
+    {
+        "english": "consecutive (adj)",
+        "turkish": "ard arda, birbirini takip eden",
+        "example": "this is fifth consecutive weekend that i have spent working",
+        "exampleTr": "bu çalışarak geçirdiğim ard arda beşinci hafta sonu",
+        "synonyms": "successive, sequential, continuous, uninterrupted",
+        "antonyms": "interrupted, broken, sporadic, random"
+    },
+    {
+        "english": "deception (n)",
+        "turkish": "aldatma, hilekarlık, dolandırma",
+        "example": "he was found guilty of obtaining money by deception",
+        "exampleTr": "aldatma yoluyla para elde etmekten suçlu bulundu",
+        "synonyms": "fraud, trickery, deceit, cheating",
+        "antonyms": "honesty, truthfulness, sincerity, candor"
+    },
+    {
+        "english": "disperse (v)",
+        "turkish": "dağıtmak, dağılmak",
+        "example": "just after the rain came down, the clouds started to disperse",
+        "exampleTr": "yağmur yağdıktan hemen sonra bulutlar dağılmaya başladı",
+        "synonyms": "scatter, spread, distribute, dissipate",
+        "antonyms": "gather, collect, assemble, concentrate"
+    },
+    {
+        "english": "exact (adj)",
+        "turkish": "kesin, tam, doğru",
+        "example": "the exact cause of the accident is still unknown",
+        "exampleTr": "kazanın kesin nedeni hala bilinmiyor",
+        "synonyms": "precise, accurate, specific, correct",
+        "antonyms": "approximate, vague, imprecise, inexact"
+    },
+    {
+        "english": "formidable (adj)",
+        "turkish": "zorlu, güçlü, ürkütücü",
+        "example": "the team faces a formidable challenge in the final match",
+        "exampleTr": "takım final maçında zorlu bir meydan okumayla karşı karşıya",
+        "synonyms": "intimidating, daunting, powerful, impressive",
+        "antonyms": "weak, easy, feeble, unimpressive"
+    },
+    {
+        "english": "graceful (adj)",
+        "turkish": "zarif, nazik, kibar",
+        "example": "the dancer moved across the stage in a graceful manner",
+        "exampleTr": "dansçı sahne boyunca zarif bir şekilde hareket etti",
+        "synonyms": "elegant, refined, poised, stylish",
+        "antonyms": "clumsy, awkward, ungainly, inelegant"
+    },
+    {
+        "english": "grasp (v)",
+        "turkish": "kavramak, anlamak, tutmak",
+        "example": "it took me a while to grasp the concept of quantum physics",
+        "exampleTr": "kuantum fiziği kavramını anlamam biraz zaman aldı",
+        "synonyms": "understand, comprehend, grip, seize",
+        "antonyms": "release, misunderstand, let go, overlook"
+    },
+    {
+        "english": "humid (adj)",
+        "turkish": "nemli, rutubetli",
+        "example": "the weather in tropical regions is often hot and humid",
+        "exampleTr": "tropikal bölgelerde hava genellikle sıcak ve nemlidir",
+        "synonyms": "damp, moist, muggy, sticky",
+        "antonyms": "dry, arid, parched, dehydrated"
+    },
+    {
+        "english": "indifferent (adj)",
+        "turkish": "kayıtsız, ilgisiz, aldırışsız",
+        "example": "he seemed completely indifferent to her feelings",
+        "exampleTr": "onun duygularına karşı tamamen kayıtsız görünüyordu",
+        "synonyms": "apathetic, unconcerned, detached, uninterested",
+        "antonyms": "concerned, interested, passionate, caring"
+    },
+    {
+        "english": "instil (v)",
+        "turkish": "aşılamak, yerleştirmek, telkin etmek",
+        "example": "parents try to instil good values in their children",
+        "exampleTr": "ebeveynler çocuklarına iyi değerler aşılamaya çalışır",
+        "synonyms": "implant, infuse, inculcate, imbue",
+        "antonyms": "remove, extract, eradicate, eliminate"
+    },
+    {
+        "english": "isolate (v)",
+        "turkish": "izole etmek, ayırmak, tecrit etmek",
+        "example": "scientists managed to isolate the virus in the laboratory",
+        "exampleTr": "bilim insanları laboratuvarda virüsü izole etmeyi başardı",
+        "synonyms": "separate, segregate, detach, seclude",
+        "antonyms": "integrate, connect, combine, unite"
+    },
+    {
+        "english": "spoil (v)",
+        "turkish": "bozmak, şımartmak, çürümek",
+        "example": "don't let one bad experience spoil your whole vacation",
+        "exampleTr": "bir kötü deneyimin tüm tatilinizi bozmasına izin vermeyin",
+        "synonyms": "ruin, damage, mar, impair",
+        "antonyms": "improve, enhance, preserve, fix"
+    },
+    {
+        "english": "spontaneous (adj)",
+        "turkish": "kendiliğinden, doğal, plansız",
+        "example": "the audience broke into spontaneous applause",
+        "exampleTr": "seyirciler kendiliğinden alkışlamaya başladı",
+        "synonyms": "impulsive, unplanned, natural, instinctive",
+        "antonyms": "planned, deliberate, calculated, premeditated"
+    },
+    {
+        "english": "substantial (adj)",
+        "turkish": "önemli, büyük, hatırı sayılır",
+        "example": "the company made a substantial profit this year",
+        "exampleTr": "şirket bu yıl önemli bir kar elde etti",
+        "synonyms": "considerable, significant, sizeable, large",
+        "antonyms": "insignificant, small, minor, trivial"
+    },
+    {
+        "english": "precipitate (v)",
+        "turkish": "hızlandırmak, tetiklemek, çökeltmek",
+        "example": "the scandal precipitated his resignation from the government",
+        "exampleTr": "skandal onun hükümetten istifasını hızlandırdı",
+        "synonyms": "hasten, accelerate, trigger, cause",
+        "antonyms": "delay, slow, hinder, prevent"
+    },
+    {
+        "english": "quotation (n)",
+        "turkish": "alıntı, fiyat teklifi",
+        "example": "he began his speech with a quotation from Shakespeare",
+        "exampleTr": "konuşmasına Shakespeare'den bir alıntıyla başladı",
+        "synonyms": "citation, excerpt, passage, quote",
+        "antonyms": "original, paraphrase"
+    },
+    {
+        "english": "realm (n)",
+        "turkish": "alan, saha, krallık",
+        "example": "this discovery opened up a whole new realm of possibilities",
+        "exampleTr": "bu keşif yepyeni bir olasılıklar alanı açtı",
+        "synonyms": "domain, sphere, field, kingdom",
+        "antonyms": "-"
+    },
+    {
+        "english": "legitimate (adj)",
+        "turkish": "meşru, yasal, geçerli",
+        "example": "the government must address the legitimate concerns of citizens",
+        "exampleTr": "hükümet vatandaşların meşru endişelerini ele almalı",
+        "synonyms": "lawful, legal, valid, justified",
+        "antonyms": "illegitimate, illegal, invalid, unlawful"
+    },
+    {
+        "english": "relentlessly (adv)",
+        "turkish": "durmaksızın, acımasızca, amansızca",
+        "example": "the company relentlessly pursued its goal of market dominance",
+        "exampleTr": "şirket pazar hakimiyeti hedefini durmaksızın takip etti",
+        "synonyms": "persistently, continuously, unremittingly, tirelessly",
+        "antonyms": "intermittently, occasionally, sporadically"
+    },
+    {
+        "english": "migration (n)",
+        "turkish": "göç",
+        "example": "the migration of birds to warmer climates occurs every autumn",
+        "exampleTr": "kuşların daha sıcak iklimlere göçü her sonbaharda gerçekleşir",
+        "synonyms": "movement, relocation, exodus, immigration",
+        "antonyms": "settlement, staying, remaining"
+    },
+    {
+        "english": "nullify (v)",
+        "turkish": "geçersiz kılmak, hükümsüz kılmak, iptal etmek",
+        "example": "the court decided to nullify the contract due to fraud",
+        "exampleTr": "mahkeme dolandırıcılık nedeniyle sözleşmeyi geçersiz kılmaya karar verdi",
+        "synonyms": "invalidate, annul, void, cancel",
+        "antonyms": "validate, confirm, ratify, approve"
+    },
+    {
+        "english": "obesity (n)",
+        "turkish": "obezite, şişmanlık",
+        "example": "childhood obesity has become a major health concern worldwide",
+        "exampleTr": "çocukluk çağı obezitesi dünya çapında önemli bir sağlık sorunu haline geldi",
+        "synonyms": "fatness, corpulence, overweight, plumpness",
+        "antonyms": "thinness, slimness, leanness"
+    },
+    {
+        "english": "poison (n/v)",
+        "turkish": "zehir, zehirlemek",
+        "example": "industrial waste can poison the water supply",
+        "exampleTr": "endüstriyel atıklar su kaynağını zehirleyebilir",
+        "synonyms": "toxin, venom, contaminate, pollute",
+        "antonyms": "antidote, cure, purify, cleanse"
+    },
+    {
+        "english": "susceptible (adj)",
+        "turkish": "duyarlı, hassas, yatkın",
+        "example": "elderly people are more susceptible to infections",
+        "exampleTr": "yaşlı insanlar enfeksiyonlara karşı daha duyarlıdır",
+        "synonyms": "vulnerable, prone, sensitive, liable",
+        "antonyms": "resistant, immune, invulnerable, impervious"
+    },
+    {
+        "english": "specify (v)",
+        "turkish": "belirtmek, açıkça ifade etmek",
+        "example": "please specify your requirements in the application form",
+        "exampleTr": "lütfen başvuru formunda gereksinimlerinizi belirtin",
+        "synonyms": "state, define, indicate, detail",
+        "antonyms": "generalize, obscure, vague"
+    },
+    {
+        "english": "supplant (v)",
+        "turkish": "yerini almak, ikame etmek",
+        "example": "digital photography has supplanted traditional film",
+        "exampleTr": "dijital fotoğrafçılık geleneksel filmin yerini aldı",
+        "synonyms": "replace, supersede, displace, substitute",
+        "antonyms": "retain, keep, maintain, preserve"
+    },
+    {
+        "english": "hostile (adj)",
+        "turkish": "düşmanca, hasım, olumsuz",
+        "example": "the negotiations took place in a hostile atmosphere",
+        "exampleTr": "müzakereler düşmanca bir atmosferde gerçekleşti",
+        "synonyms": "unfriendly, antagonistic, aggressive, belligerent",
+        "antonyms": "friendly, welcoming, hospitable, amicable"
+    },
+    {
+        "english": "dilate (v)",
+        "turkish": "genişlemek, büyümek, açılmak",
+        "example": "the pupils of the eyes dilate in darkness",
+        "exampleTr": "gözlerin gözbebekleri karanlıkta genişler",
+        "synonyms": "expand, widen, enlarge, extend",
+        "antonyms": "contract, shrink, narrow, constrict"
+    },
+    {
+        "english": "deal (v/n)",
+        "turkish": "anlaşma, ilgilenmek, dağıtmak",
+        "example": "we made a deal to share the profits equally",
+        "exampleTr": "karları eşit paylaşmak için bir anlaşma yaptık",
+        "synonyms": "agreement, bargain, handle, distribute",
+        "antonyms": "disagreement, ignore, neglect"
+    },
+    {
+        "english": "decade (n)",
+        "turkish": "on yıl",
+        "example": "technology has advanced rapidly over the past decade",
+        "exampleTr": "teknoloji son on yılda hızla ilerledi",
+        "synonyms": "ten years, decennium",
+        "antonyms": "-"
+    },
+    {
+        "english": "contempt (n)",
+        "turkish": "hakaret, küçümseme, aşağılama",
+        "example": "she looked at him with utter contempt",
+        "exampleTr": "ona tam bir küçümsemeyle baktı",
+        "synonyms": "scorn, disdain, disrespect, derision",
+        "antonyms": "respect, admiration, esteem, regard"
+    },
+    {
+        "english": "content (adj/n)",
+        "turkish": "memnun, içerik",
+        "example": "she felt content with her simple life in the countryside",
+        "exampleTr": "kırsaldaki basit hayatından memnundu",
+        "synonyms": "satisfied, pleased, happy, fulfilled",
+        "antonyms": "dissatisfied, unhappy, discontented"
+    },
+    {
+        "english": "punctual (adj)",
+        "turkish": "dakik, zamanında",
+        "example": "he is always punctual for meetings",
+        "exampleTr": "toplantılara her zaman dakik gelir",
+        "synonyms": "on time, prompt, timely, precise",
+        "antonyms": "late, tardy, delayed, unpunctual"
+    },
+    {
+        "english": "adjourn (v)",
+        "turkish": "ertelemek, ara vermek",
+        "example": "the judge decided to adjourn the trial until next week",
+        "exampleTr": "hakim davayı gelecek haftaya ertelemeye karar verdi",
+        "synonyms": "postpone, defer, suspend, delay",
+        "antonyms": "continue, proceed, convene, resume"
+    },
+    {
+        "english": "assign (v)",
+        "turkish": "atamak, görevlendirmek, tahsis etmek",
+        "example": "the teacher assigned homework to all students",
+        "exampleTr": "öğretmen tüm öğrencilere ödev verdi",
+        "synonyms": "allocate, appoint, designate, delegate",
+        "antonyms": "withhold, retain, keep, dismiss"
+    },
+    {
+        "english": "track (v/n)",
+        "turkish": "izlemek, iz, yol",
+        "example": "we need to track the package until it arrives",
+        "exampleTr": "paketi ulaşana kadar izlememiz gerekiyor",
+        "synonyms": "follow, trace, monitor, trail",
+        "antonyms": "lose, ignore, neglect"
+    },
+    {
+        "english": "treasure (n/v)",
+        "turkish": "hazine, değer vermek",
+        "example": "she treasures the memories of her childhood",
+        "exampleTr": "çocukluk anılarına çok değer veriyor",
+        "synonyms": "wealth, riches, cherish, value",
+        "antonyms": "trash, discard, neglect, despise"
+    },
+    {
+        "english": "threat (n)",
+        "turkish": "tehdit",
+        "example": "climate change poses a serious threat to biodiversity",
+        "exampleTr": "iklim değişikliği biyoçeşitlilik için ciddi bir tehdit oluşturuyor",
+        "synonyms": "menace, danger, risk, warning",
+        "antonyms": "safety, security, protection, reassurance"
+    }
+]

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelime Kartlari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kelime Kartlari</h1>
+
+        <div class="card-container">
+            <div class="card" id="flashcard">
+                <div class="card-front">
+                    <p class="word" id="english-word"></p>
+                    <p class="example" id="example-sentence"></p>
+                    <p class="hint">Cevabi gormek icin tikla</p>
+                </div>
+                <div class="card-back">
+                    <p class="translation" id="turkish-word"></p>
+                    <p class="example-tr" id="example-tr"></p>
+                    <div class="extra-info">
+                        <p class="synonyms"><strong>Synonyms:</strong> <span id="synonyms"></span></p>
+                        <p class="antonyms"><strong>Antonyms:</strong> <span id="antonyms"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn">Onceki</button>
+            <span id="counter">1 / 1</span>
+            <button id="next-btn">Sonraki</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

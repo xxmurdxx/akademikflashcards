@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.card-container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 60vw;
+    height: 50vh;
+    max-width: 800px;
+    max-height: 500px;
+    min-width: 300px;
+    min-height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-front {
+    background: white;
+}
+
+.card-back {
+    background: #f8f9fa;
+    transform: rotateY(180deg);
+}
+
+.word {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hint {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.translation {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+.example {
+    font-size: 1.2rem;
+    color: #555;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.4;
+    padding: 0 20px;
+    margin-bottom: 5px;
+}
+
+.example-tr {
+    font-size: 1rem;
+    color: #888;
+    text-align: center;
+    line-height: 1.4;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+.extra-info {
+    width: 100%;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.synonyms, .antonyms {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.synonyms strong {
+    color: #28a745;
+}
+
+.antonyms strong {
+    color: #dc3545;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #667eea;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #667eea;
+    color: white;
+    transform: scale(1.05);
+}
+
+#counter {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
