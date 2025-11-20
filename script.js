@@ -1,6 +1,7 @@
 let words = [];
 let currentIndex = 0;
 let recentCards = []; // Son gosterilen kartlari takip et
+let displayMode = 'mixed'; // 'mixed', 'english', 'turkish'
 
 // Diziyi karistir (Fisher-Yates algoritmasi)
 function shuffleArray(array) {
@@ -38,13 +39,20 @@ function displayCard() {
 
     const currentWord = words[currentIndex];
 
-    // Rastgele on veya arka yuz goster
-    const showFrontFirst = Math.random() > 0.5;
-
     // Animasyonu gecici olarak kapat
     card.style.transition = 'none';
 
-    // Rastgele hangi yuzle baslayacagini belirle
+    // Mod'a gore hangi yuzle baslayacagini belirle
+    let showFrontFirst;
+    if (displayMode === 'mixed') {
+        showFrontFirst = Math.random() > 0.5;
+    } else if (displayMode === 'english') {
+        showFrontFirst = true; // Her zaman Ingilizce
+    } else { // turkish
+        showFrontFirst = false; // Her zaman Turkce
+    }
+
+    // Hangi yuzle baslayacagini belirle
     if (showFrontFirst) {
         card.classList.remove('flipped');
     } else {
@@ -113,10 +121,29 @@ function nextCard() {
     updateCounter();
 }
 
+// Mod degistirme fonksiyonu
+function changeMode(mode) {
+    displayMode = mode;
+
+    // Butenlari guncelle
+    document.querySelectorAll('.mode-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    document.getElementById(`mode-${mode}`).classList.add('active');
+
+    // Karti yeniden goster
+    displayCard();
+}
+
 // Event listener'lari ekle
 document.getElementById('flashcard').addEventListener('click', flipCard);
 document.getElementById('prev-btn').addEventListener('click', prevCard);
 document.getElementById('next-btn').addEventListener('click', nextCard);
+
+// Mod butonlari
+document.getElementById('mode-mixed').addEventListener('click', () => changeMode('mixed'));
+document.getElementById('mode-english').addEventListener('click', () => changeMode('english'));
+document.getElementById('mode-turkish').addEventListener('click', () => changeMode('turkish'));
 
 // Klavye kontrolleri
 document.addEventListener('keydown', (e) => {

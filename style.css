@@ -5,8 +5,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -20,8 +21,46 @@ body {
 
 h1 {
     color: white;
-    margin-bottom: 30px;
-    font-size: 2.5rem;
+    margin-bottom: 25px;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.mode-selector {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.mode-btn {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mode-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mode-btn.active {
+    background: white;
+    color: #667eea;
+    border-color: white;
+    box-shadow: 0 6px 25px rgba(255, 255, 255, 0.3);
 }
 
 .card-container {
@@ -65,11 +104,11 @@ h1 {
 }
 
 .card-front {
-    background: white;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
 }
 
 .card-back {
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     transform: rotateY(180deg);
 }
 
@@ -82,7 +121,11 @@ h1 {
 
 .hint {
     font-size: 0.9rem;
-    color: #888;
+    color: #999;
+    background: rgba(102, 126, 234, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin-top: 10px;
 }
 
 .translation {
@@ -113,22 +156,28 @@ h1 {
 
 .extra-info {
     width: 100%;
-    padding: 0 20px;
+    padding: 15px 20px;
     text-align: left;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    margin-top: 10px;
 }
 
 .synonyms, .antonyms {
     font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 5px;
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.6;
 }
 
 .synonyms strong {
     color: #28a745;
+    font-weight: 700;
 }
 
 .antonyms strong {
     color: #dc3545;
+    font-weight: 700;
 }
 
 .controls {
@@ -139,25 +188,104 @@ h1 {
 }
 
 button {
-    padding: 12px 25px;
+    padding: 14px 28px;
     font-size: 1rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     background: white;
     color: #667eea;
     cursor: pointer;
-    transition: all 0.3s;
-    font-weight: bold;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
     background: #667eea;
     color: white;
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 #counter {
     color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    border-radius: 20px;
+    min-width: 80px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .mode-selector {
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+
+    .mode-btn {
+        padding: 8px 18px;
+        font-size: 0.85rem;
+    }
+
+    .card {
+        width: 90vw;
+        height: 65vh;
+    }
+
+    .word {
+        font-size: 2.5rem;
+    }
+
+    .translation {
+        font-size: 2.2rem;
+    }
+
+    .example {
+        font-size: 1rem;
+    }
+
+    .example-tr {
+        font-size: 0.9rem;
+    }
+
+    .hint {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    .extra-info {
+        padding: 12px 15px;
+    }
+
+    .synonyms, .antonyms {
+        font-size: 0.85rem;
+    }
+
+    button {
+        padding: 12px 22px;
+        font-size: 0.95rem;
+    }
+
+    #counter {
+        font-size: 1.1rem;
+        padding: 8px 16px;
+    }
+
+    .controls {
+        gap: 15px;
+    }
 }
