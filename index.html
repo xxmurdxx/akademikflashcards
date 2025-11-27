@@ -10,10 +10,31 @@
     <div class="container">
         <h1>Kelime Kartlari</h1>
 
+        <!-- Gunluk Dashboard -->
+        <div class="dashboard" id="dashboard">
+            <div class="dashboard-item">
+                <span class="dashboard-label">Yeni Kelime:</span>
+                <span class="dashboard-value" id="dash-new-words">0 / 20</span>
+            </div>
+            <div class="dashboard-item">
+                <span class="dashboard-label">Bugun Tekrar:</span>
+                <span class="dashboard-value" id="dash-due-today">0</span>
+            </div>
+            <div class="dashboard-item">
+                <span class="dashboard-label">Tamamlanan:</span>
+                <span class="dashboard-value" id="dash-reviews">0</span>
+            </div>
+            <div class="dashboard-item">
+                <span class="dashboard-label">Ogrenilen:</span>
+                <span class="dashboard-value" id="dash-mastered">0</span>
+            </div>
+        </div>
+
         <div class="mode-selector">
             <button class="mode-btn active" id="mode-mixed">Karisik</button>
             <button class="mode-btn" id="mode-english">Ingilizce</button>
             <button class="mode-btn" id="mode-turkish">Turkce</button>
+            <button class="mode-btn mode-hard" id="mode-hard">🔥 Zor Kelimeler</button>
         </div>
 
         <div class="card-container">
@@ -34,10 +55,20 @@
             </div>
         </div>
 
+        <div class="rating-controls" id="rating-controls">
+            <button class="rating-btn rating-wrong" id="rating-wrong">❌ Bilmiyorum <small>(1)</small></button>
+            <button class="rating-btn rating-unsure" id="rating-unsure">⚠️ Kararsizim <small>(2)</small></button>
+            <button class="rating-btn rating-correct" id="rating-correct">✅ Biliyorum <small>(3)</small></button>
+        </div>
+
         <div class="controls">
             <button id="prev-btn">Onceki</button>
             <span id="counter">1 / 1</span>
             <button id="next-btn">Sonraki</button>
+        </div>
+
+        <div class="reset-section">
+            <button id="reset-btn" class="reset-btn">🔄 Ilerlemeyi Sifirla</button>
         </div>
     </div>
 

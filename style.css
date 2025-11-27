@@ -21,11 +21,59 @@ body {
 
 h1 {
     color: white;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-size: 2.8rem;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     letter-spacing: 1px;
+}
+
+.dashboard {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    flex-wrap: wrap;
+}
+
+.dashboard-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.dashboard-label {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.dashboard-value {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-value.success {
+    color: #4ade80;
+}
+
+.dashboard-value.warning {
+    color: #fbbf24;
+}
+
+.dashboard-value.danger {
+    color: #f87171;
 }
 
 .mode-selector {
@@ -61,6 +109,23 @@ h1 {
     color: #667eea;
     border-color: white;
     box-shadow: 0 6px 25px rgba(255, 255, 255, 0.3);
+}
+
+.mode-hard {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border-color: rgba(245, 87, 108, 0.8);
+}
+
+.mode-hard:hover {
+    background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+    box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+}
+
+.mode-hard.active {
+    background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+    color: white;
+    border-color: #f5576c;
+    box-shadow: 0 6px 30px rgba(245, 87, 108, 0.5);
 }
 
 .card-container {
@@ -180,6 +245,69 @@ h1 {
     font-weight: 700;
 }
 
+.rating-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.rating-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rating-wrong {
+    background: #dc3545;
+    color: white;
+}
+
+.rating-wrong:hover {
+    background: #c82333;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(220, 53, 69, 0.4);
+}
+
+.rating-unsure {
+    background: #ffc107;
+    color: #333;
+}
+
+.rating-unsure:hover {
+    background: #e0a800;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(255, 193, 7, 0.4);
+}
+
+.rating-correct {
+    background: #28a745;
+    color: white;
+}
+
+.rating-correct:hover {
+    background: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(40, 167, 69, 0.4);
+}
+
+.rating-btn:active {
+    transform: translateY(-1px);
+}
+
+.rating-btn small {
+    opacity: 0.7;
+    font-size: 0.85em;
+    margin-left: 4px;
+}
+
 .controls {
     display: flex;
     justify-content: center;
@@ -224,11 +352,55 @@ button:active {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+.reset-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.reset-btn {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 87, 87, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.reset-btn:hover {
+    background: rgba(255, 87, 87, 0.2);
+    border-color: rgba(255, 87, 87, 0.8);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 87, 87, 0.3);
+}
+
+.reset-btn:active {
+    transform: translateY(0);
+}
+
 /* Mobil uyumluluk */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
+        margin-bottom: 12px;
+    }
+
+    .dashboard {
+        padding: 12px 15px;
+        gap: 12px;
         margin-bottom: 15px;
+    }
+
+    .dashboard-label {
+        font-size: 0.75rem;
+    }
+
+    .dashboard-value {
+        font-size: 1.1rem;
     }
 
     .mode-selector {
@@ -287,5 +459,24 @@ button:active {
 
     .controls {
         gap: 15px;
+    }
+
+    .rating-controls {
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .rating-btn {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+
+    .reset-section {
+        margin-top: 20px;
+    }
+
+    .reset-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
     }
 }
